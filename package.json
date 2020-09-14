@@ -1,0 +1,11 @@
+{
+  "name": "nativescript-cli-7",
+  "version": "1.0.0",
+  "repository": "https://github.com/Upd4ting/nativescript-cli-7.git",
+  "author": "Antony Rizzitelli <contact@vulksoft.be>",
+  "license": "MIT",
+  "scripts": {
+    "build": "docker build -t vulksoft/nativescript-cli-7 .",
+    "push": "docker push vulksoft/nativescript-cli-7"
+  }
+}
