@@ -35,10 +35,10 @@ RUN echo "export JAVA_OPTS=\"$JAVA_OPTS\"" >> ~/.bashrc && \
 
 # Download sdk components (takes a long time)
 RUN yes | /android-sdk/tools/bin/sdkmanager --licenses && \
-  /android-sdk/tools/bin/sdkmanager "tools" "platform-tools" "platforms;android-29" "build-tools;29.0.3" "extras;google;m2repository" "extras;android;m2repository"
+  /android-sdk/tools/bin/sdkmanager "tools" "platform-tools" "platforms;android-30" "build-tools;30.0.3" "extras;google;m2repository" "extras;android;m2repository"
 
 # Install nativescript globally
-RUN yes | sudo npm install nativescript@7.2.0 -g
+RUN yes | sudo npm install nativescript@8.1.5 -g
 
 # Configure reporting, and ensure that we have a good setup (will fail if 'nativescript doctor' finds any issues)
 RUN tns usage-reporting disable && \
